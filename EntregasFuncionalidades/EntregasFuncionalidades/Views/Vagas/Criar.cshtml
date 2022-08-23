@@ -1,0 +1,30 @@
+﻿@model EntregasFuncionalidades.Models.VAGA
+
+@{
+    ViewBag.Title = "Criar";
+}
+
+<h2>Criar Nova Vaga</h2>
+<br />
+<div>
+    <form action="Criar" method="post">
+        <label>Código: </label>
+        <input type="number" id="codigo" name="codigo" required />
+        <label>Nome: </label>
+        <input type="text" id="Nome" name="Nome" required />
+        <label>Descrição: </label>
+        <input type="text" id="descricao" name="descricao" required />
+        <label>Atribuição: </label>
+        <input type="text" id="atribuicao" name="atribuicao" required />
+        <label>Salário: </label>
+        <input type="number" id="salario" name="salario" required />
+        <label>Requisito: </label>
+        <input type="text" id="requisito" name="requisito" required />
+        <label>Data: </label>
+        <input id="data" name="data"/>
+        <br />
+        <br />
+        <a href="Index" class="btn btn-primary">Voltar</a>
+        <button type="submit" class="btn btn-success">Salvar</button>
+    </form>
+</div>

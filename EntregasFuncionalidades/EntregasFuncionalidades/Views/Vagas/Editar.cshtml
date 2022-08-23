@@ -1,0 +1,25 @@
+﻿@model EntregasFuncionalidades.Models.VAGA
+@{
+    ViewBag.Title = "Editar";
+}
+
+<h2>Editando Área</h2>
+
+<div>
+    <form action="Editar?id=@Model.VAIID" method="post">
+        <label>Nome: </label>
+        <input type="text" id="Nome" name="Nome" value="@Model.VAINOME" required />
+        <label>Descrição: </label>
+        <input type="text" id="descricao" name="descricao" value="@Model.VAIDESCRICAO" required />
+        <label>Atribuição: </label>
+        <input type="text" id="atribuicao" name="atribuicao" value="@Model.VAIATRIBUICAO" required />
+        <label>Salário: </label>
+        <input type="number" id="salario" name="salario" value="@Model.VAISALARIO" required />
+        <label>Requisito: </label>
+        <input type="text" id="requisito" name="requisito" value="@Model.VAIREQUISITO" required />
+        <br />
+        <br />
+        <a href="Index" class="btn btn-primary">Voltar</a>
+        <button type="submit" class="btn btn-success">Salvar</button>
+    </form>
+</div>
